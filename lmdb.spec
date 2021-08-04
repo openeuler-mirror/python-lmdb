@@ -1,7 +1,7 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-lmdb
 Version:	1.2.1
-Release:	1
+Release:	2
 Summary:	Universal Python binding for the LMDB 'Lightning' Database
 License:	OLDAP-2.8
 URL:		http://github.com/jnwatson/py-lmdb/
@@ -18,7 +18,6 @@ BuildRequires:	python3-devel
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-cffi
 BuildRequires:	gcc
-BuildRequires:	gdb
 
 %description -n python3-lmdb
 Universal Python binding for the LMDB 'Lightning' Database
@@ -71,5 +70,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Wed Aug 04 2021 chenyanpanHW <chenyanpan@huawei.com> - 1.2.1-2
+- DESC: delete BuildRequires gdb
+
 * Sun Jul 04 2021 Python_Bot <Python_Bot@openeuler.org> - 1.2.1-1
 - Package Spec generated
