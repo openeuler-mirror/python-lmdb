@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-lmdb
-Version:	1.2.1
-Release:	2
+Version:	1.3.0
+Release:	1
 Summary:	Universal Python binding for the LMDB 'Lightning' Database
 License:	OLDAP-2.8
 URL:		http://github.com/jnwatson/py-lmdb/
-Source0:	https://files.pythonhosted.org/packages/2f/df/3aea5279753cb8ab0c96dec43106e24f388d4179d5224f6d3e652016c095/lmdb-1.2.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/ed/61/41f3c7cbd8a67202ef24fad3375ed936093a0547dc645581dd11c09581b7/lmdb-1.3.0.tar.gz
 Requires:	python3-cffi
 
 %description
@@ -30,7 +30,7 @@ Provides:	python3-lmdb-doc
 Universal Python binding for the LMDB 'Lightning' Database
 
 %prep
-%autosetup -n lmdb-1.2.1
+%autosetup -n lmdb-1.3.0
 
 %build
 %py3_build
@@ -70,6 +70,9 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Fri Aug 26 2022 hkgy <kaguyahatu@outlook.com> - 1.3.0-1
+- Update to 1.3.0
+
 * Wed Aug 04 2021 chenyanpanHW <chenyanpan@huawei.com> - 1.2.1-2
 - DESC: delete BuildRequires gdb
 
